@@ -16,7 +16,7 @@ public class TwHckMain {
 		final WebDriver wd = new FirefoxDriver();
 		wd.get("http://trivia-app.herokuapp.com/registered");
 		WebElement inputEmail = wd.findElement(By.id("player_email"));
-		inputEmail.sendKeys("mauricio.faustino@gmail.com");
+		inputEmail.sendKeys("inscricoes@agilebrazil.com");
 		WebElement btnSend = wd.findElement(By.name("commit"));
 		btnSend.click();
 		

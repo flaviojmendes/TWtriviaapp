@@ -41,11 +41,5 @@ public class TwHckMain {
 	        
 	        wd.findElement(By.className("play")).click();
 		}
-//	        for(WebElement we : wd.findElements(By.className("answer0"))){
-//	        	System.out.println(we.isDisplayed());
-////	        	System.out.println(we.getText());
-//	        	Thread.sleep(4000);
-//	        }
-		
 	}
 }

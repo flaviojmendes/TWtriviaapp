@@ -5,11 +5,14 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 
 public class TwHckMain {
+	private static final String URL = "http://trivia-app.herokuapp.com/registered";
+	private static final String EMAIL = "teste@code.com";
 	public static void main(String[] args) throws InterruptedException {
-		final WebDriver wd = new WebDriver();
-		wd.get("http://trivia-app.herokuapp.com/registered");
+		WebDriver wd = new FirefoxDriver();
+		wd.get(URL);
+		
 		WebElement inputEmail = wd.findElement(By.id("player_email"));
-		inputEmail.sendKeys("mauricio.faustino@gmail.com");
+		inputEmail.sendKeys(EMAIL);
 		WebElement btnSend = wd.findElement(By.name("commit"));
 		btnSend.click();
 		
